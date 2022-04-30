@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(128, 207, 238);
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo img{
+    width: 5%;
+}
+
+body {
+    background-image: url(imG/pexels-pixabay-316093.png);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background-size: cover;
+}
+
+.container .name h1 {
+    font-size: 60px;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h5 {
+    font-size: 25px;
+}
+
+#about p{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form input {
+    width: 50%;
+}
+
+.form button {
+    width: 15%;
+}
