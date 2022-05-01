@@ -1,63 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/eefd4beac9.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
-    <title>Jader Raniere Albrez</title>
-</head>
-<body>
-    <header>
-        <div id="logo">
-            <img src="img/technology.png" alt="Logo USB"/>
-        </div>
-
-        <ul>
-            <li>
-                <a target="_blank" href="https://github.com/JaderRA">Github</a>
-            </li>
-            <li>
-                <a target="_blank" href="mailto:jader.ralbrez@gmail.com">Email</a>
-            </li>
-            <li>
-                <a target="_blank" href="https://t.me/JaderRA">Telegram</a>
-            </li>
-        </ul>
-    </header>
-
-    <main>
-        <section class="container">
-            <div class="name">
-                <h1>Jader Raniere Albrez</h1>
-                <h5>Front-End Developer</h5>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/eefd4beac9.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+        <title>Jader Raniere Albrez</title>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="img/technology.png" alt="Logo"/>
             </div>
 
-            <div id="arrow">
-                <i class="fa-solid fa-circle-arrow-down"></i>
-            </div>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://github.com/JaderRA">Github</a>
+                </li>
+                <li>
+                    <a target="_blank" href="mailto:jader.ralbrez@gmail.com">Email</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://t.me/JaderRA">Telegram</a>
+                </li>
+            </ul>
+        </header>
 
-            <div id="about">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente, deserunt ullam architecto quos dolore reprehenderit sint possimus, ipsum eius odit itaque quo a. Deserunt facere dolorum adipisci odit ab.
-                </p>
-                    
-            </div>
-
-            <div class="form">
-                <div>
-                    <p>Deixe seu contato</p>
+        <main>
+            <section class="container">
+                <div class="name">
+                    <h1>Jader Raniere Albrez</h1>
+                    <h5>Front-End Developer</h5>
                 </div>
-                <form action="">
-                    <input type="text" placeholder="Entre seu email">
-                    <button>Enviar</button>
-                </form>
-            </div>
-        </section>
-    </main>
-</body>
+
+                <div onclick="displayAbout()" id="arrow">
+                    <i id="animation" class="fa-solid fa-circle-arrow-down"></i>
+                </div>
+
+                <div id="about">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente, deserunt ullam architecto quos dolore reprehenderit sint possimus, ipsum eius odit itaque quo a. Deserunt facere dolorum adipisci odit ab.
+                    </p>
+                        
+                </div>
+
+                <div class="form">
+                    <div>
+                        <p>Deixe seu contato</p>
+                    </div>
+                    <form action="">
+                        <input type="text" placeholder="Entre seu email">
+                        <button>Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <script>
+            function displayAbout(){
+                var arrow = document.getElementById('animation');
+                arrow.classList.toggle('rotate');
+                var display = document.getElementById('about');
+                display.classList.toggle('active');
+            }
+        </script>
+
+    </body>
 </html>
